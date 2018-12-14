@@ -7,17 +7,9 @@
 </head>
 <body>
     <script>
-        function doPost() {
-        UrlFetchApp.fetch(''https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3', {
-        'headers': {
-            'Authorization': 'Bearer ' + '你的權杖',
-        },
-        'method': 'post',
-        'payload': {
-            'imageFullsize':'https://www.oit.edu.tw/ezfiles/0/1000/img/4/home_map_ln.jpg'
-        }
-    });
-}
+        $(function(){
+            $.post('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3');
+        });
     </script>
 </body>
 </html>
