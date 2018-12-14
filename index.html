@@ -7,11 +7,20 @@
 </head>
 <body>
     <script>
-     def pushbots(pushRaw): 
-    os.system('curl -X POST -H "Content-Type: application/json" -d' + "'" + '{"value1":'" + pushRaw + '"}' + '"https://maker.ifttt.com/trigger/raw/with/key/[我的ID]")
-        $(function(){
             $.post('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3');
-            ![image](home_map_ln.jpg)
+            function doPost() {
+    UrlFetchApp.fetch('https://notify-api.line.me/api/notify', {
+        'headers': {
+            'Authorization': 'Bearer ' + 'cQ2ONQY3Pen6NG_7QFgsb3',
+        },
+        'method': 'post',
+        'payload': {
+            'message':'測試一下！',
+            'imageThumbnail':'預覽縮圖網址',
+            'imageFullsize':'https://www.oit.edu.tw/ezfiles/0/1000/img/4/home_map_ln.jpg'
+        }
+    });
+}
                });
     </script>
 </body>
