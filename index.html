@@ -7,9 +7,15 @@
 </head>
 <body>
     <script>
-        $(function(){
-            $.post('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3');
-        });
+        
+        function doPost() {
+    UrlFetchApp.fetch('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3', {
+        'method': 'post',
+        'payload': {
+            'imageFullsize':'https://www.oit.edu.tw/ezfiles/0/1000/attach/3/pta_19_4245732_50017.jpg'
+        }
+    });
+}
     </script>
 </body>
 </html>
