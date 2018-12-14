@@ -7,21 +7,17 @@
 </head>
 <body>
     <script>
-            $.post('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3');
-            function doPost() {
-    UrlFetchApp.fetch('https://notify-api.line.me/api/notify', {
+        function doPost() {
+        UrlFetchApp.fetch(''https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3', {
         'headers': {
-            'Authorization': 'Bearer ' + 'z6WYmDVxYLAf7VsHHSPnJkYxXOfHHrM7VGy4KmdVtw9',
+            'Authorization': 'Bearer ' + '你的權杖',
         },
         'method': 'post',
         'payload': {
-            'message':'測試一下！',
-            'imageThumbnail':'預覽縮圖網址',
             'imageFullsize':'https://www.oit.edu.tw/ezfiles/0/1000/img/4/home_map_ln.jpg'
         }
     });
 }
-               });
     </script>
 </body>
 </html>
