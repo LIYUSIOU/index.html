@@ -3,17 +3,13 @@
     <meta charset="UTF-8">
     <title>發送 LINE 訊息</title>
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <script>
-        
-        function doPost() {
-    UrlFetchApp.fetch('https://maker.ifttt.com/trigger/AI2/with/key/cQ2ONQY3Pen6NG_7QFgsb3', {
-        'method': 'post',
-       
-    });
-}
+        $(function(){
+            $.post('https://maker.ifttt.com/trigger/AI2/with/key/bVZkG8Le93P8sZL2nWJTcd',{value1:'Hello World'});
+        });
     </script>
 </body>
 </html>
