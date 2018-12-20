@@ -2,23 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <title>發送 LINE 訊息</title>
-    <script>
+    <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <script>
-       function doPost() {
-            UrlFetchApp.fetch('https://maker.ifttt.com/use/_9wBrK_2zkKrc_1zgjMZn', {
-        'headers': {
-            'Authorization': 'Bearer ' + '_9wBrK_2zkKrc_1zgjMZn',
-        },
-        'method': 'post',
-        'payload': {
-            'message':'測試一下！',
-            'imageFullsize':'http://www.nthcc.com.tw/proimage/images/traffic/map.jpg'
-        }
-    });
-}
+        $(function(){
+            curl -X POST -H“Content-Type：application / json”-d'{“value2”：“http://ntuml.mc.ntu.edu.tw/events/2014ammlc/pic/t_pk01.jpg”}' https://maker.ifttt.com/trigger/AI2/with/key/cJ_1JAxWVSwjFmldILwCLd);
+        });
     </script>
 </body>
 </html>
