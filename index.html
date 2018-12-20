@@ -2,15 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <title>發送 LINE 訊息</title>
-    <img src="http://www.thcc.net.tw/images/about04_p2_2.jpg">
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <script>
-        $(function(){
-            $.post( '{"value3":"http://www.thcc.net.tw/images/about04_p2_2.jpg"}''https://maker.ifttt.com/trigger/AI2/with/key/bVZkG8Le93P8sZL2nWJTcd');
-        });
+       function doPost() {
+            UrlFetchApp.fetch('https://notify-api.line.me/api/notify', {
+        'headers': {
+            'Authorization': 'Bearer ' + 'https://maker.ifttt.com/use/_9wBrK_2zkKrc_1zgjMZn',
+        },
+        'method': 'post',
+        'payload': {
+            'message':'測試一下！',
+            'imageFullsize':'http://www.thcc.net.tw/images/about04_p2_2.jpg'
+        }
+    });
+}
     </script>
 </body>
 </html>
